@@ -15,9 +15,9 @@ universe = Nbodies(N = no_of_bodies)
 sleep(wait)
 while(1):
     rate = R
-    def showSphere(evt):
+    def Get_pos(evt):
         loc = evt.pos
         universe.add_particle(loc)
 
-    scene.bind('click', showSphere)
+    scene.bind('click', Get_pos)
     universe.update()
