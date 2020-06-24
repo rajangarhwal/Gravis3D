@@ -17,6 +17,13 @@ class Nbodies:
             #newbody = Body()
             self.bodies.append(newbody)
         
+    def add_particle(self,position):
+        r = abs(normal(1e9,1e8,1))
+        vx,vy,vz = normal(0,1e7,1), normal(0,1e7,1), normal(0,1e7,1)
+        add = Body(radius = r[0], pos = vector(position), velocity = vector(vx[0],vy[0],vz[0]))
+        self.bodies.append(add)    
+    
+    
     def update(self):
         for i in range(self.N):
             for j in range(self.N):
