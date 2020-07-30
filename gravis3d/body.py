@@ -6,6 +6,7 @@ class Body():
     '''
     A class representing all the bodies
     in the simulation.
+    contants are added
     '''
     def __init__(self, radius = None, pos = None, velocity = None, colour = None,density = None):
         self.radius = radius or 6.9634*1e9
